@@ -1,9 +1,5 @@
-# SenShiza Website
-This is SenShiza's Website source code.
+# VOCALOID 787 Website
+This is the source code for VOCALOID 787 Website.
 
 # Programing Language
-This website is programed using HTML and CSS.
-
-# Known Issues
-* Website work in progress
-* Website is not completly responsive
+This website is programed using HTML, CSS and Javascript.
