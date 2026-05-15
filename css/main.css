@@ -171,7 +171,7 @@ body {
     .container {
         position: static;
         transform: none;
-        padding: 100px 20px 40px;
+        padding-top: calc(80px + env(safe-area-inset-top) + 20px);
     }
     .navbar {
         backdrop-filter: none;
