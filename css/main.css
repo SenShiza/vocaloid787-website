@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Miku";
+  src: url('../font/Miku.ttf') format('truetype');
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body of the website */
+body {
+    min-height: 100vh;
+    background: url(../img/bg.jpg) no-repeat
+    center center/cover;
+    backdrop-filter: blur(3px);
+    background-attachment: fixed;
+}
+
+/* Navigation Bar */
+.navbar {
+    font-family: "Miku", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-logo {
+    font-family: "Miku", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #67cedd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-container .navbar-menu {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container .navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+.navbar-container .navbar-menu li a:hover,
+.navbar-container .navbar-menu li a.active {
+    color: #67cedd;
+    background: rgba(188, 212, 229, 0.8);
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* CENTER TEXT */
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.container span {
+    text-transform: uppercase;
+    display: block;
+}
+
+/* HOME PAGE TEXT */
+.home_text {
+    font-family: "Miku", sans-serif;
+    color: #67cedd;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+.home_subtext {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT PAGE TEXT */
+.about_p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+/* Discord Server Button */
+.ds_button {
+    padding: 1em 2em;
+    font-size: 20px;
+    background-color: #67cedd;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: "Miku", sans-serif;
+    position: relative;
+    transition: background-color 0.4s ease;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.ds_button:hover {
+    cursor: pointer;
+    background-color: rgba(188, 212, 229, 0.8);
+    color: #67cedd;
+    border: 2px solid #f0f0f0;
+    
+}
+
+/* Responsive Style */
+@media (max-width: 880px) {
+    .navbar {
+        backdrop-filter: none;
+    }
+
+    .navbar-container .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-container .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* TITLE ABOUT PAGE */
+    .home_text {
+        font-size: 70px;
+    }
+
+    /* ABOUT PAGE TEXT */
+    .about_p {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar-container .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
+
+    /* TITLE ABOUT PAGE */
+    .home_text {
+        font-size: 50px;
+    }
+
+    /* ABOUT PAGE TEXT */
+    .about_p {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
