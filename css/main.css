@@ -163,6 +163,14 @@ body {
 
 /* Responsive Style */
 @media (max-width: 880px) {
+    body {
+        background-attachment: scroll;
+    }
+    .container {
+        position: static;
+        transform: none;
+        padding: 100px 20px 40px;
+    }
     .navbar {
         backdrop-filter: none;
     }
@@ -205,17 +213,28 @@ body {
 
     /* TITLE ABOUT PAGE */
     .home_text {
-        font-size: 70px;
+        font-size: clamp(2rem, 10vw, 4rem);
+        letter-spacing: 4px;
     }
 
     /* ABOUT PAGE TEXT */
     .about_p {
+        max-width: 600px;
         font-size: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin: 20px auto;
+        line-height: 1.6;
+        text-align: left;
     }
 }
 @media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+    .container {
+        position: static;
+        transform: none;
+        padding: 90px 15px 40px;
+    }
     .navbar-container {
         padding: 0 1rem;
     }
@@ -223,21 +242,28 @@ body {
     .navbar-logo {
         font-size: 1.7rem;
     }
+    
+    .navbar-container .navbar-menu {
+        width: 75%;
+    }
 
     .navbar-container .navbar-menu li a {
         font-size: 1.2rem;
-        padding: 3px 15px;
+        padding: 10px 15px;
     }
 
     /* TITLE ABOUT PAGE */
     .home_text {
-        font-size: 50px;
+        font-size: clamp(2rem, 9vw, 3rem);
+        letter-spacing: 2px;
     }
 
     /* ABOUT PAGE TEXT */
     .about_p {
-        font-size: 15px;
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 90%;
+        margin: 20px auto;
+        text-align: left;
     }
 }
