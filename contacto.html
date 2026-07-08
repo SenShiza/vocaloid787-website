@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=3">
+    <title>VOCALOID 787 - Contacto</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo-link">
+            <img src="img/logo_footer.png" alt="Vocaloid 787 Logo" class="logo">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="ds.html">Discord</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </button>
+
+    </nav>
+</header>
+<div class="menu-overlay"></div>
+<section class="contact-section" id="contacto">
+
+    <div class="contact-container">
+
+        <div class="contact-info reveal-left">
+
+            <h2>Contáctanos</h2>
+
+            <p>
+                ¿Tienes alguna pregunta, sugerencia o deseas colaborar con nosotros? <br>
+                Nos encantaría escucharte.
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item reveal">
+                    <h3>Email</h3>
+                    <span><b>contact@vocaloid787.com</b></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <form id="contactForm" action="https://formsubmit.co/ajax/contact@vocaloid787.com" method="POST" class="contact-form reveal-right">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde Vocaloid787.com">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    name="Nombre"
+                    placeholder="Nombre"
+                    required
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Correo electrónico"
+                    required
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    name="Titulo"
+                    placeholder="Título"
+                    required
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea
+                    name="Mensaje"
+                    rows="6"
+                    placeholder="Mensaje"
+                    required
+                ></textarea>
+
+            </div>
+
+            <button class="send-btn">
+
+                Enviar
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-content">
+
+            <img 
+                src="img/logo_footer.png" 
+                alt="VOCALOID 787"
+                class="footer-logo"
+            >
+
+            <p class="footer-description">
+                Comunidad Oficial del Vocaloid en Puerto Rico.
+                <br>
+                <i>Página Web en desarollo. Algunas opciones pueden no estar disponibles.</i>
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="https://discord.gg/kscYdP2XNV">Discord</a>
+                <a href="https://www.instagram.com/vocaloid787/">Instagram</a>
+                <a href="https://www.tiktok.com/@vocaloid787">TikTok</a>
+                <a href="https://x.com/Vocaloid787">X / Twitter</a>
+
+            </div>
+
+
+            <div class="footer-line"></div>
+
+
+            <p class="footer-copy">
+                © 2026 VOCALOID 787. Todos los derechos reservados.
+            </p>
+
+
+        </div>
+
+
+</footer>
+
+
+<button id="backToTop">
+
+    ↑
+    <span>Ir Arriba</span>
+
+</button>
+
+<div id="toast" class="toast"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
