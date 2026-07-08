@@ -76,6 +76,7 @@ header.scrolled{
     display: block;
 
     animation:logoAppear .8s ease;
+    cursor:pointer;
 }
 
 .nav-links{
