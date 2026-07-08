@@ -1,33 +1,218 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/reset.css?v=2">
-        <link rel="stylesheet" href="css/main.css?v=2">
-        <link rel="icon" type="image/png" href="img/icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VOCALOID 787</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <a href="index" class="navbar-logo">VOCALOID 787</a>
-                <button class="navbar-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="navbar-menu">
-                    <li><a href="index" class="active">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="ds">Discord Server</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-            <span class="home_text">VOCALOID 787</span>
-            <span class="home_subtext">Comunidad Vocaloid Puertorriqueña</span>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=3">
+    <title>VOCALOID 787</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo-link">
+            <img src="img/logo_footer.png" alt="Vocaloid 787 Logo" class="logo">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index" class="active">Inicio</a></li>
+            <li><a href="eventos">Eventos</a></li>
+            <li><a href="ds">Discord</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </button>
+
+    </nav>
+</header>
+<div class="menu-overlay"></div>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Comunidad Puertorriqueña <br>del VOCALOID</h1>
+
+        <p>
+            Conecta con otros fans, descubre nueva música,
+            participa en eventos y ayuda a hacer crecer
+            el Vocaloid en la isla.
+        </p>
+
+        <div class="buttons">
+            <a href="ds" class="btn primary">Unirme al Discord</a>
+            <a href="#about_us" class="btn secondary">Sobre Nosotros</a>
         </div>
-    </body>
-    <script src="js/script.js"></script>
+    </div>
+
+    <div class="hero-image">
+
+        <img src="img/logo_transparent.png" alt="Vocaloid 787 Logo">
+
+    </div>
+
+</section>
+<section class="about-us" id="about_us">
+
+    <div class="about-container">
+
+        <h2>¿Quiénes Somos?</h2>
+
+        <p class="about-intro reveal">
+            Fundada en mayo 2026, <b>VOCALOID 787</b> es una comunidad creada para reunir a todos los
+            fanáticos del VOCALOID, UTAU y SynthV en Puerto Rico.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="about-card reveal">
+                <h3>Comunidad</h3>
+                <p>
+                    Un lugar donde los fans puedan compartir música,
+                    fanarts, cosplays y hablar sobre Vocaloid.
+                </p>
+            </div>
+
+            <div class="about-card reveal">
+                <h3>Conexiones</h3>
+                <p>
+                    Queremos que los fans puedan conocerse, hacer amistades
+                    y organizar meetups en Puerto Rico.
+                </p>
+            </div>
+
+            <div class="about-card reveal">
+                <h3>Nuestro objetivo</h3>
+                <p>
+                    Hacer crecer la comunidad Vocaloid para realizar eventos
+                    y conciertos fanmade en la isla.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="socials">
+
+    <div class="socials-container">
+
+        <h2 class="reveal">Síguenos</h2>
+
+        <p class="socials-intro reveal">
+
+            Sigue nuestras redes para estar al tanto de noticias
+            relacionadas a nuestra comunidad y el Vocaloid.
+
+        </p>
+
+        <div class="socials-grid">
+
+            <a href="https://discord.gg/kscYdP2XNV"
+               target="_blank"
+               class="social-card reveal">
+
+                <i class="fa-brands fa-discord"></i>
+
+                <h3>Discord</h3>
+
+            </a>
+
+            <a href="https://www.instagram.com/vocaloid787/"
+               target="_blank"
+               class="social-card reveal">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <h3>Instagram</h3>
+
+            </a>
+
+            <a href="https://www.tiktok.com/@vocaloid787"
+               target="_blank"
+               class="social-card reveal">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+                <h3>TikTok</h3>
+
+            </a>
+
+            <a href="https://x.com/Vocaloid787"
+               target="_blank"
+               class="social-card reveal">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+                <h3>X / Twitter</h3>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-content">
+
+            <img 
+                src="img/logo_footer.png" 
+                alt="VOCALOID 787"
+                class="footer-logo"
+            >
+
+            <p class="footer-description">
+                Comunidad Oficial del Vocaloid en Puerto Rico.
+                <br>
+                <i>Página Web en desarollo. Algunas opciones pueden no estar disponibles.</i>
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="https://discord.gg/kscYdP2XNV">Discord</a>
+                <a href="https://www.instagram.com/vocaloid787/">Instagram</a>
+                <a href="https://www.tiktok.com/@vocaloid787">TikTok</a>
+                <a href="https://x.com/Vocaloid787">X / Twitter</a>
+
+            </div>
+
+
+            <div class="footer-line"></div>
+
+
+            <p class="footer-copy">
+                © 2026 VOCALOID 787. Todos los derechos reservados.
+            </p>
+
+
+        </div>
+
+
+</footer>
+
+
+<button id="backToTop">
+
+    ↑
+    <span>Ir Arriba</span>
+
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
