@@ -898,6 +898,9 @@ header.scrolled{
 
 .send-btn{
 
+    display:block;
+    text-align:center;
+
     width:100%;
 
     padding:18px;
@@ -917,6 +920,8 @@ header.scrolled{
     cursor:pointer;
 
     transition:.3s;
+
+  
 
 }
 
