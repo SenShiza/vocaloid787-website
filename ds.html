@@ -1,38 +1,107 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/reset.css?v=2">
-        <link rel="stylesheet" href="css/main.css?v=2">
-        <link rel="icon" type="image/png" href="img/icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VOCALOID 787 - Discord Server</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <a href="index" class="navbar-logo">VOCALOID 787</a>
-                <button class="navbar-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="navbar-menu">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="ds" class="active">Discord Server</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-            <span class="home_text">Discord Server</span>
-            <p class="about_p">Actualmente, el servidor de Discord es sumamente pequeño y estamos buscando a boricuas que se quieran unir y pasar el rato con los demás fanáticos. 
-                <br>Si desean unirse, favor de hacer clic o tap en el botón de abajo. ¡Muchas gracias! ¡39!
-            </p>
-            <br><br>
-            <button class="ds_button" 
-                    onclick="window.location.href= 'https://discord.gg/kscYdP2XNV';">Únete</button>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/reset.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=3">
+    <title>VOCALOID 787 - Discord</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index" class="logo-link">
+            <img src="img/logo_footer.png" alt="Vocaloid 787 Logo" class="logo">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index">Inicio</a></li>
+            <li><a href="eventos">Eventos</a></li>
+            <li><a href="ds" class="active">Discord</a></li>
+            <li><a href="contacto">Contacto</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </button>
+
+    </nav>
+</header>
+<div class="menu-overlay"></div>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Servidor de Discord</h1>
+
+        <p>
+            Actualmente, el servidor de Discord es sumamente pequeño y estamos buscando a boricuas que se quieran unir y pasar el rato con los demás fanáticos.
+            Si desean unirse, favor de hacer clic o tap en el botón de abajo. ¡Muchas gracias! ¡39!
+        </p>
+
+        <div class="buttons">
+            <a href="https://discord.gg/kscYdP2XNV" class="btn secondary">Unirme</a>
         </div>
-    </body>
-    <script src="js/script.js"></script>
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-content">
+
+            <img 
+                src="img/logo_footer.png" 
+                alt="VOCALOID 787"
+                class="footer-logo"
+            >
+
+            <p class="footer-description">
+                Comunidad Oficial del Vocaloid en Puerto Rico.
+                <br>
+                <i>Página Web en desarollo. Algunas opciones pueden no estar disponibles.</i>
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="https://discord.gg/kscYdP2XNV">Discord</a>
+                <a href="https://www.instagram.com/vocaloid787/">Instagram</a>
+                <a href="https://www.tiktok.com/@vocaloid787">TikTok</a>
+                <a href="https://x.com/Vocaloid787">X / Twitter</a>
+
+            </div>
+
+
+            <div class="footer-line"></div>
+
+
+            <p class="footer-copy">
+                © 2026 VOCALOID 787. Todos los derechos reservados.
+            </p>
+
+
+        </div>
+
+
+</footer>
+
+
+<button id="backToTop">
+
+    ↑
+    <span>Ir Arriba</span>
+
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
