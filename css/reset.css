@@ -35,3 +35,9 @@ table {
 textarea {
   white-space: revert;
 }
+
+/* bold */
+b,
+strong {
+    font-weight: bold;
+}
