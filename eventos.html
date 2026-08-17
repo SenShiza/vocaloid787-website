@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/icon.png">
-    <link rel="stylesheet" href="css/reset.css?v=8">
-    <link rel="stylesheet" href="css/main.css?v=8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=3">
     <title>VOCALOID 787 - Eventos</title>
 </head>
 <body>
@@ -13,15 +14,15 @@
 <header>
     <nav class="navbar">
 
-        <a href="index" class="logo-link">
+        <a href="index.html" class="logo-link">
             <img src="img/logo_footer.png" alt="Vocaloid 787 Logo" class="logo">
         </a>
 
         <ul class="nav-links">
-            <li><a href="index">Inicio</a></li>
-            <li><a href="eventos" class="active">Eventos</a></li>
-            <li><a href="ds">Discord</a></li>
-            <li><a href="contacto">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="eventos.html" class="active">Eventos</a></li>
+            <li><a href="ds.html">Discord</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
 
         <button class="menu-toggle" aria-label="Abrir menú">
@@ -36,21 +37,86 @@
 </header>
 <div class="menu-overlay"></div>
 
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>PÁGINA NO DISPONIBLE</h1>
-
-        <p>
-            Lo sentimos. Esta página no esta disponible en estos momentos.
-        </p>
-
-        <div class="buttons">
-            <a href="index" class="btn secondary">Volver al inicio</a>
-        </div>
-    </div>
-
+<!-- ========================= EVENTOS ========================= --> 
+<section class="events-page"> 
+    <div class="events-header"> 
+        <span class="events-label">VOCALOID 787</span> 
+        <h1>Eventos</h1> 
+        <p> Descubre los eventos de nuestra comunidad y acompáñanos 
+            a disfrutar del VOCALOID en Puerto Rico. </p> 
+    </div> 
+    <!-- EVENT CARD --> 
+        <article class="event-card reveal"> 
+            <div class="event-image"> 
+                <div class="event-image-content"> 
+                    <span class="event-logo">VOCALOID 787</span> 
+                    <h2>N/A</h2> 
+                    <p>Soon</p> 
+                </div> <span class="event-status" id="eventStatus">N/A</span> 
+            </div> 
+            <div class="event-content"> 
+                <div class="event-category"> CATEGORÍA </div> 
+                <h2>NO HAY EVENTOS</h2> 
+                <p class="event-description"> Soon </p> 
+                    <div class="event-details"> 
+                        <div class="event-detail"> 
+                            <span class="detail-icon">📅</span> 
+                        <div> 
+                            <strong>Fecha</strong> 
+                            <span>N/A</span> 
+                    </div> 
+            </div> 
+            <div class="event-detail"> 
+                <span class="detail-icon">🕖</span> 
+                <div> 
+                    <strong>Hora</strong> 
+                    <span>N/A</span> 
+                </div> 
+            </div> 
+            <div class="event-detail"> 
+                <span class="detail-icon">📍</span> 
+                <div> 
+                    <strong>Ubicación</strong> 
+                    <span>N/A</span> 
+                </div> 
+            </div>
+        </div> 
+        <!-- COUNTDOWN --> 
+        <div class="countdown-container"> 
+            <h3>El evento comienza en:</h3> 
+            <div class="countdown"> 
+                <div class="countdown-box"> 
+                    <span id="days">00</span> 
+                    <small>Días</small> 
+                </div> 
+                <div class="countdown-separator">:</div> 
+                <div class="countdown-box"> 
+                    <span id="hours">00</span> 
+                    <small>Horas</small> 
+                </div> 
+                <div class="countdown-separator">:</div> 
+                <div class="countdown-box"> 
+                    <span id="minutes">00</span> 
+                    <small>Minutos</small> 
+                </div> <div class="countdown-separator">:</div> 
+                <div class="countdown-box"> 
+                    <span id="seconds">00</span> 
+                    <small>Segundos</small> 
+                </div> 
+            </div> 
+        </div> 
+        <a href="" class="event-button"> N/A 
+            <span>→</span> 
+        </a> 
+    </div> 
+</article> 
+<!-- MENSAJE PARA FUTUROS EVENTOS --> 
+<div class="events-footer-message reveal"> 
+    <h2>¿Más eventos?</h2> 
+    <p> Mantente conectado a nuestras redes sociales para enterarte de 
+        nuevos eventos y actividades de VOCALOID 787. </p> 
+        <a href="index.html#socials" class="events-social-button"> Síguenos </a> 
+    </div> 
 </section>
 <footer>
 
@@ -100,7 +166,98 @@
 
 </button>
 
-<script src="js/script.js?v=3" defer></script>
+<script src="js/script.js"></script>
 
+<!-- COUNTDOWN --> 
+<script> 
+ // Fecha del evento: // 
+ // Año, Mes (0-11), Día, Hora, Minuto 
+ const eventDate = new Date( 2026, 7, 14, 16, 0, 0 ).getTime(); 
+ function updateCountdown() { const now = new Date().getTime(); 
+    const difference = eventDate - now;
+       // =========================
+        // EVENT STATUS
+        // =========================
+
+        const eventStatus = document.getElementById("eventStatus");
+
+
+        if (difference <= 0) {
+
+            eventStatus.textContent = "Ahora";
+
+        } else {
+
+            const days = Math.floor(
+                difference / (1000 * 60 * 60 * 24)
+            );
+
+            const hours = Math.floor(
+                (difference % (1000 * 60 * 60 * 24))
+                / (1000 * 60 * 60)
+            );
+
+            const minutes = Math.floor(
+                (difference % (1000 * 60 * 60))
+                / (1000 * 60)
+            );
+
+
+            if (days >= 2) {
+
+                eventStatus.textContent = `En ${days} Días`;
+
+            } else if (days === 1) {
+
+                eventStatus.textContent = "En 1 Día";
+
+            } else if (hours >= 2) {
+
+                eventStatus.textContent = `En ${hours} Horas`;
+
+            } else if (hours === 1) {
+
+                eventStatus.textContent = "En 1 Hora";
+
+            } else if (minutes >= 2) {
+
+                eventStatus.textContent = `En ${minutes} Minutos`;
+
+            } else if (minutes === 1) {
+
+                eventStatus.textContent = "En 1 Minuto";
+
+            } else {
+
+                eventStatus.textContent = "Pronto";
+
+            }
+
+        }
+    // Si el evento ya comenzó 
+    if (difference <= 0) { 
+        document.querySelector(".countdown-container").innerHTML = ` 
+            <div class="event-started"> 
+                ¡El evento ha comenzado! 
+            </div> 
+        `; 
+    document.querySelector(".event-status").textContent = 
+        "EN VIVO"; 
+    return; } 
+    // Convertir milisegundos 
+    const days = Math.floor( difference / (1000 * 60 * 60 * 24) ); 
+    const hours = Math.floor( (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60) ); 
+    const minutes = Math.floor( (difference % (1000 * 60 * 60)) / (1000 * 60) ); 
+    const seconds = Math.floor( (difference % (1000 * 60)) / 1000 ); 
+    // Mostrar valores 
+    document.getElementById("days").textContent = String(days).padStart(2, "0"); 
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0"); 
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0"); 
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0"); } 
+    // Actualizar inmediatamente 
+    updateCountdown(); 
+    // Actualizar cada segundo 
+    setInterval(updateCountdown, 1000); 
+</script>
 </body>
 </html>
