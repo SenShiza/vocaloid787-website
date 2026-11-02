@@ -1327,7 +1327,7 @@ footer{
     justify-content: center; 
     min-height: 500px; 
     overflow: hidden; 
-    background-image: url(../img/hero_background.png);
+    background-image: url(../img/event.png);
 } 
 .event-image::before { 
     content: ""; 
