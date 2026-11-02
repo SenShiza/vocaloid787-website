@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css?v=4">
     <link rel="stylesheet" href="css/main.css?v=4">
     <title>VOCALOID 787 - Eventos</title>
@@ -48,35 +49,32 @@
         <article class="event-card reveal"> 
             <div class="event-image"> 
                 <div class="event-image-content"> 
-                    <span class="event-logo">VOCALOID 787</span> 
-                    <h2>N/A</h2> 
-                    <p>Soon</p> 
                 </div> <span class="event-status" id="eventStatus">N/A</span> 
             </div> 
             <div class="event-content"> 
-                <div class="event-category"> CATEGORÍA </div> 
-                <h2>NO HAY EVENTOS</h2> 
-                <p class="event-description"> Soon </p> 
+                <div class="event-category"> Concierto </div> 
+                <h2>VOCAL!VE</h2> 
+                <p class="event-description"> Concierto Virtual Fanmade de VOCALOID </p> 
                     <div class="event-details"> 
                         <div class="event-detail"> 
                             <span class="detail-icon">📅</span> 
                         <div> 
                             <strong>Fecha</strong> 
-                            <span>N/A</span> 
+                            <span>21 de noviembre</span> 
                     </div> 
             </div> 
             <div class="event-detail"> 
                 <span class="detail-icon">🕖</span> 
                 <div> 
                     <strong>Hora</strong> 
-                    <span>N/A</span> 
+                    <span>9:00PM</span> 
                 </div> 
             </div> 
             <div class="event-detail"> 
                 <span class="detail-icon">📍</span> 
                 <div> 
-                    <strong>Ubicación</strong> 
-                    <span>N/A</span> 
+                    <strong>Lugar</strong> 
+                    <span>VRChat</span> 
                 </div> 
             </div>
         </div> 
@@ -104,7 +102,7 @@
                 </div> 
             </div> 
         </div> 
-        <a href="" class="event-button"> N/A 
+        <a href="https://vrchat.com/home/group/grp_6ecf4d9f-9076-4441-8421-e4e195635885/calendar/cal_e176e9bb-3dcf-4720-9c7d-b5e021c58b51" target="_blank" class="event-button"> Ver Evento 
             <span>→</span> 
         </a> 
     </div> 
@@ -171,7 +169,7 @@
 <script> 
  // Fecha del evento: // 
  // Año, Mes (0-11), Día, Hora, Minuto 
- const eventDate = new Date( 2026, 7, 14, 16, 0, 0 ).getTime(); 
+ const eventDate = new Date( 2026, 11, 21, 21, 0, 0 ).getTime(); 
  function updateCountdown() { const now = new Date().getTime(); 
     const difference = eventDate - now;
        // =========================
@@ -258,5 +256,6 @@
     // Actualizar cada segundo 
     setInterval(updateCountdown, 1000); 
 </script>
+
 </body>
 </html>
